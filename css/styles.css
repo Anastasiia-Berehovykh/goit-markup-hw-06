@@ -244,6 +244,31 @@ opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms var(--timing-function);
 }
+.form{
+  width: 500px;
+  outline: 1px solid tomato;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+.form-field{
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-field label{
+  margin-bottom: 4px;
+}
+.form-field input{
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field input::placeholder{
+  color: rgba(117, 117, 117, 0.5);;
+}
 .textarea{
   resize: none;
 }
