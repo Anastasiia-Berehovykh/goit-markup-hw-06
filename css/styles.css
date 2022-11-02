@@ -236,7 +236,7 @@ button {
   left: 50%;
 
   width: 600px;
-  height: 400px;
+  min-height: 400px;
   padding: 15px;
   background-color: #ffffff;
 
@@ -271,6 +271,10 @@ opacity: 1;
 }
 .textarea{
   resize: none;
+  
+}
+.comment{
+  padding: 12px 16px;
 }
 
 /* hero */
@@ -806,4 +810,44 @@ footer .logo-studio {
 .footer .container {
   display: flex;
   align-items: baseline;
+}
+.invitation{
+  
+  margin-left: 93px;
+  width: 570px;
+}
+.invitation-name{
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+.invitation-form{
+  position: relative;
+  display: flex;
+
+}
+.email{
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+width: 358px;
+}
+
+.clic::after{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 1px solid var(--black);
+  background-color: red;
+  margin-left: 10px;
 }
