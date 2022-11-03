@@ -252,10 +252,23 @@ opacity: 1;
   padding: 20px;
 }
 .form-field{
+  position: relative;
+  
+
   outline: 1px solid blue;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+.form-input:focus + .form-label{
+  color: red;
+}
+.form-label{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  background-color: #2196f3;
+  transform: translateY(-50%);
 }
 .form-field label{
   margin-bottom: 4px;
@@ -269,6 +282,7 @@ opacity: 1;
 .form-field input::placeholder{
   color: rgba(117, 117, 117, 0.5);;
 }
+
 .textarea{
   resize: none;
   
